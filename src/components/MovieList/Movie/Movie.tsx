@@ -10,6 +10,7 @@ interface TProps {
 const Movie: FC<TProps> = ({ movie }) => {
   return (
     <li>
+      <div className="grow flex flex-col justify-center items-center">
       <Link href={`/movies/${movie.id}`}>
         <Image
           className="cursor-pointer"
@@ -19,7 +20,10 @@ const Movie: FC<TProps> = ({ movie }) => {
           height={700}
         />
       </Link>
-      <strong className="text-lg">{movie.Title}</strong>
+        <div className="underline">
+          <strong className="text-lg">{movie.Title}</strong>
+        </div>
+      </div>
     </li>
   );
 };

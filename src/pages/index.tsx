@@ -18,9 +18,9 @@ const Home: NextPage<HomeProps> = () => {
           </h1>
         </div>
       </div>
-      <h1 className="text-2x1 font-bold">
+      <div className="font-bold">
         <span>Nombre: Ricardo Jose Jimenez Espinosa / Correo: ricardo.jimenez3@utp.ac.pa</span>
-      </h1>
+      </div>
     </ApplicationWrapper>
   );
 };
